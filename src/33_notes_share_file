@@ -1,0 +1,13 @@
+###class share yapmak icin, oncelikle ayri ayri class olmasi gerekir.
+    sonra src den sag klik ile class yapilir. ardindan icderisine kopyalanir
+
+        student
+        studentObjects
+
+    oncelikler neredeyse ayri ayri class olmasi gerekir
+    sonra src den class yapilir:Student diye
+    sonra yapilan .Student icerisine , koplyalanir,
+    once >>>public class Student
+    sonra >>class StudentObjects
+      yazilrak   share paylasim yapilir. discorda bu sekilde paylasim yapilir\
+    sonrasinda tekrar silinir.
