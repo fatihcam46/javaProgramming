@@ -1,4 +1,4 @@
-package Variables;
+package TurkceJava;
 
 import java.util.Scanner;
 

@@ -29,7 +29,7 @@ public class Login {
                 p = scan.next();
                 attempts--;
             }
-           if(u.equals("Cydeo") && p.equals("Cyddeo123")){
+           if(u.equals("Cydeo") && p.equals("Cydeo123")){
                System.out.println("Logged in");
            }else{
                System.out.println("Your account is locked");

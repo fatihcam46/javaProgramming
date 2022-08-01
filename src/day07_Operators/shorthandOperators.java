@@ -26,7 +26,7 @@ public class shorthandOperators {
         System.out.println(x+200);  //300
         //x = x +200;
         x+=200;
-        System.out.println("x="+x);
+        System.out.println("x="+x);//300
         System.out.println("-------------------------------------------------------");
         String str = "Wooden";
         str = " Spoon";
