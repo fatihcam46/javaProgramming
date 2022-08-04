@@ -1,6 +1,6 @@
 package day03_EscapeSquences;
 /*
-Create a class called Triangle.java and print:
+Create a class called Circle.java and print:
 
                     ^
                    / \
