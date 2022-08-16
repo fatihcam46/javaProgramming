@@ -1,4 +1,4 @@
-package day41_Exeptions;
+package day41_Exceptions;
 import day39_Recap.cydeoTask.Employee;
 
 public class MultiCatchBlocks {
