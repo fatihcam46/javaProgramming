@@ -10,6 +10,8 @@ public class Dog extends Animal{
         System.out.println(name+" is barking");
     }
 
+    public void play() {
+    }
 }
 /*
 this keyword: refers to the instances. Current class

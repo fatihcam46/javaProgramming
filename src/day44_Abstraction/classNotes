@@ -36,6 +36,7 @@ details/implementation (how it's done)
 		2 ways to achieve the abstraction:
 				1. Abstract class
 				2. Interface
+				(how can we create?right click>new>java class>interface
 		Abstract class: meant to be super class (parent)
 						can not be final
 						Not concrete ( can not create object)
@@ -61,10 +62,10 @@ Animal Task:
    Lion extends Animal implements Wild
    Eagle extends Animal implements Wild, Flyable
    Falcon extends Animal implements Wild, Flyable
-   Dolphin extends Animal implemnts Plyable, Swimmable
+   Dolphin extends Animal implements Playable, Swimmable
    Shark extends Animal implements Wild, Swimmable
-   Duck extends Animal implements Swimmable, Flyable, Plyable
-   Java extends Animal implements Swimmable, Flyable, Plyable, Wild
+   Duck extends Animal implements Swimmable, Flyable, Playable
+   Java extends Animal implements Swimmable, Flyable, Playable, Wild
   ...
 Person implements Swimmable, Plyable
 Boat implements Swimmable
