@@ -28,4 +28,5 @@ class D implements X,Y,Z{
 
 
 public class Extends_vs_Implements extends A implements X, Y, Z{
+    //follow rules>>first  extends  >> after  implements
 }
