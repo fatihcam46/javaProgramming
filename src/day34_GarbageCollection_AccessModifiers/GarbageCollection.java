@@ -26,7 +26,7 @@ public class GarbageCollection {//1st way>> use null keyword//2ng way >>creating
 
         System.out.println(car1);//null
 
-        System.out.println("---------------3--2nd way unrefernce object----------------");
+        System.out.println("---------------3--2nd way unreferenced object----------------");
         Dog dog1 = new Dog();
         dog1.name = "Lucy";
 

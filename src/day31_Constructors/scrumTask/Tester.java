@@ -5,14 +5,14 @@ public class Tester {
     public int employeeID;
     public String jobTitle;
     public double salary;
-//we need constructor>>>>right click>>>constroctr>>>choose all>>
+//1-we need constructor>>>>right click>>>constructor>>>choose all>>
     public Tester(String name, int employeeID, String jobTitle, double salary) {
         this.name = name;
         this.employeeID = employeeID;
         this.jobTitle = jobTitle;
         this.salary = salary;
     }
-//generate toString method>>able to each
+//2-generate toString method>>able to each
     public String toString() {
         return "Tester{" +
                 "name='" + name + '\'' +
@@ -22,7 +22,7 @@ public class Tester {
                 '}';
     }
 
-    // Actions: lets add
+    // 3-Actions: lets add
     public void smokeTesting(){
         System.out.println(name+" is smoke testing");
     }

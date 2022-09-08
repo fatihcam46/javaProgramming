@@ -4,7 +4,7 @@ public class Constructor_vs_StaticBlock {
 
 
     static{ ///it can run itself
-        System.out.println("Static Block");//will be printd 1st
+        System.out.println("Static Block");//will be print 1st
     }
     public Constructor_vs_StaticBlock(){
         System.out.println("Constructor");//it will not print until>>it needs object

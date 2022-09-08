@@ -48,7 +48,7 @@ package day43_Abstraction.employeeTask;
         }
 
 //2-work>>create>>but it is abstract>>method without body>>it will be change>>child classes
-        //if you add abstracthere>>add here>>public abstract class Employee extends Person{
+        //if you add abstract there>>add here>>public abstract class Employee extends Person{
         public abstract void work();
 //5-toString
         public String toString() {

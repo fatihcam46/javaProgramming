@@ -49,7 +49,7 @@ class name: Car
 				(MUST use constructor call to set the brand, model)
 		4th constructor: initializes brand, model, year, price
 				(MUST use constructor call to set the brand, model, year)
-		5th Constructor: intializes all the instances
+		5th Constructor: initializes all the instances
 				(MUST use constructor call to set the brand, mode, year, price, color)
 		instance methods: toString
  */
