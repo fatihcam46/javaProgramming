@@ -60,7 +60,7 @@ Scrum Task:
 	        Attributes:
 	            name, employeeID, JobTitle, Salary
 
-	        Add A constructor that can set all the fileds
+	        Add A constructor that can set all the fields
 
 	        Actions:
 	           smokeTesting(),  creatingTicket(), dailyStandUp() toString()
