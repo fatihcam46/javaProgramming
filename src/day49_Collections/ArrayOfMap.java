@@ -1,4 +1,4 @@
-package day52_Map_FunctionalInterface;
+package day49_Collections;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;

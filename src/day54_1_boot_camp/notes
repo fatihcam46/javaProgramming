@@ -1,0 +1,198 @@
+Java Bootcamp Day01
+
+Topics:
+		1. Primitives: int, double, char, boolean
+		2. Primitive Type Castings: Implicit vs Explicit
+		3. Wrapper class
+		4. String
+		5. String vs StringBuilder vs StringBuffer
+		6. Loops: for & while
+		7. Array
+		8. for each loop
+		9. Custom Methods
+		10. Method Overloading
+		11. Constructor
+		12. Class & Objects
+		13. Static vs Instance
+		14. Import Statements
+		15. Access Modifiers
+		16. OOP Encapsulations
+
+
+1. Primitives: int, double, char, boolean
+			   byte, short, int long, float, double
+			   char, boolean
+
+2. Primitive Type Castings: Implicit vs Explicit
+
+			1. implicit casting: casting smaller primitive type to larger
+			2. explicit casting: casting larage primitive type to smaller (Explicitly)
+
+
+3. Wrapper class: the objects that represents the primitives
+
+
+4. String: immutable version of char sequences
+
+		"Cydeo "
+		 012345
+
+		 'Z' != 'z'
+
+		 Methods: charAt, length, trim, lower & upper case, replace, substring, equals, equalsIgnoreCase, split, toCharArray
+
+
+5. StringBuilder vs StringBuffer: mutable char sequences
+
+		StringBuilder: Not Synchronized
+
+		String Buffer: Synchronized
+
+
+
+6. Loops: repeated action
+
+		for: if the number of repetition is known
+			for(init; condition; iterator){
+				statements
+			}
+
+		while: to repeat for unknown number of times
+			while(condition){
+				statements
+			}
+
+
+	break: exits the loop or switch
+
+	continue: jumps to the next iteration of loop
+
+	return: exits the current methods
+
+
+7. Array: supports primitives & non-primitives
+		  size is fixed
+		  has index
+		  can be multi-dimensional
+
+
+8. for each loop: number of iteratiosn & iteration orders are fixed
+				  There must be a data structure
+
+
+9. Custom Methods: Function
+				   grouping a series of code fragments that can perform a specific task
+				   improves the reusability of codes
+
+
+			   public static  void/anyDataType   methodName(Parameters){
+			   		code fragments that can perform the task
+			   }
+
+
+10. Method Overloading: multiple methods having same method names in a class
+
+						PARAMETERS MUST BE DIFFERENT
+
+
+11. Constructor: every class must have constructor
+				 used for creating objects
+				 execution depedns on the object
+
+
+			 In my framework:
+
+			 		BasePage
+			 			public BasePage(){
+			 				PageFactory.intiElement(driver, this);
+			 			}
+
+
+			 		HomePage extends BasePage
+
+			 		@FindBy
+
+
+	 		this()
+	 		super()
+
+
+12. Class & Objects:
+
+			Class: where the objects came from, A template for objects. no memory is allocated
+
+			Object: an instance of a class. each object has its own memory
+
+13. Static vs Instance: one copy vs multiple copies
+
+			static: belong to the class
+
+			instance: belong to the objects
+
+
+			ConfigurationReader:
+				static Properties peroperty;
+
+				static{
+					File input tream...
+					load the prperties...
+				}
+
+			Driver:
+				static WebDriver driver;
+
+				getDriver(){
+
+				}
+
+
+14. Import Statements:
+
+		regular import:
+
+				import packageInfo.classInfo;
+
+
+		static import:
+
+				import static packageInfo.classInfo.staticMember;
+
+				import static packageInfo.classInfo.*;
+
+
+
+15. Access Modifiers:
+
+			public: Always accessible at everywhere
+			protected: Always visible within same package. Accesible outside packages to sub classes ONLY
+			default: Always visible within same package. Not accessible outside the package
+			private: Accessible within same class ONLY
+
+
+
+16. OOP Encapsulations: hiding the data by giving private access modifier
+
+						use public getter & setters to read/write the data.
+
+						TO HAVE COMPLETE CONTROL OF DATA
+
+						getter: read ONLY. public instance method
+								Return type is same with the Data Type of private variable
+								Has no parameter
+
+						setter: Write ONLY. public instance method
+								return type is void
+								Passes a parameter
+
+			In my framework:
+				POJO
+
+
+
+
+
+
+
+
+
+

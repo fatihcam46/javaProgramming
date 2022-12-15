@@ -1,0 +1,361 @@
+Java Bootcamp Day02
+
+Topics:
+		17. OOP Inheritance
+		18. Method Overriding
+        19. Final keyword
+        20. OOP Abstraction
+        21. Abstract Class vs Interface
+        22. OOP Polymorphism
+        23. Reference Type Castings: Upcasting vs DownCasting
+        24. Exceptions: checked & unchecked
+        25. Exception Handling
+        26. final vs finally vs finalize
+        27. garbage collection & garbage collector
+        28. Collections: List, Set, Queue
+        29. Iterable & Iterator
+        30. Maps
+
+
+
+17. OOP Inheritance: Building IS A relationship between classes (parent/child)
+
+
+        ClassA extends ClassB
+
+        ClassC extends ClassB
+
+        ClassD extends ClassC
+
+        sub-class: Inherits the accessible variables and methods from super class.
+                   Can have its own unique variables and methods
+
+
+        super-class: Inherits NOTHING from sub-class.
+                    Can only contain common variables and methods of all sub classes
+
+
+        A class can extend one class ONLY
+
+        A class can implement MULTIPLE interfaces
+
+
+        In My framework:
+
+                abstract TestBase:
+
+                        driver
+                        action
+
+                        response
+                        url..
+
+                        @BeforeMethod
+                        final setUp(){
+                            open browser
+                            maximize browser
+                            login...
+
+                        }
+
+                        @AferMethod
+                        tearDown(){
+                                quit
+                                resport
+                        }
+
+
+                        createSpecialReport();
+
+
+                TestCasesClass1 extends TestBase
+
+                        @Test
+
+                TestCasesClass2 extends TestBase
+
+
+                TestCasesClass3 extends TestBase
+
+
+                TestCasesClass4 extends TestBase
+
+
+        In My framework:
+
+            abstract BasePage
+                BasePage(){
+                    PageFactory.initElement(driver, this)
+                }
+
+                final login()
+
+                ...
+
+            HomePage extends BasePage
+
+            page2 extends BasePage
+
+            page3 extends BasePage
+
+            ....
+
+
+18 Method overriding: Giving different implementations to the method
+                      MUST happen in sub class
+
+                      Access Modifier must be same or more visible
+
+
+                      driver.get()
+
+19. Final keyword: fixed/ unchangable
+
+        variable: can not re-assigned
+
+        method: can not be overriden
+
+        class: can not be inherited
+
+
+20. OOP Abstraction: hinding the impelementation details
+                     putting the focus on the essentials without worrying about the details
+
+                     abstract method: method without the body.
+                                      Meant to be overriden
+
+                2.  Ways:
+                    1. Abstract class: meant to be a parent class
+                                       can not be instantiated
+
+                    2. Interface: blueprint of the class
+                                  used for provoding additional methods to the classes that needs
+                                  meant to be implement
+
+
+                                  variables: static & final variable ONLY
+
+                                  methods: abstract methods, static methods, default methods
+
+
+              In my framework:
+
+                    abstract class: BasePage, TestBase
+
+                    interface:
+                            Map, List, Set...
+                            JavaScriptExecuter, WebDriver, TakeScreenShot...
+
+
+
+
+22. OOP Polymorphism: object taking on many forms
+
+                        parent class/interface can reference to its any child objects
+
+                        Reference Type decides what can accessed through the referance variable
+
+
+                    In my farmework:
+
+                        Driver:
+
+                            WebDriver driver;
+
+                            WebDriver getDriver()
+
+
+                        Driver (without polymorphism):
+
+                            ChromeDriver chrome;
+
+                            FriefoxDriver firefox;
+                            ....
+
+                            getChromeDriver();
+
+                            getFirefoxDriver();
+
+                            ......
+
+            List list =
+
+            Map map =
+
+
+23. Reference Type Castings: There must be inheritance
+
+        up-casting: casting smaller refrence type to larger (implicitlydone)
+
+                    to be able to assign any child objects to the parent reference type
+
+        down-casting:  casting larger reference type to smaller. (explicitly done)
+
+                        To be able to access the members of object type
+
+
+
+        WebDriver driver = new Opera();
+        ( (TakeScreenShot) driver ).takescreenshot()
+        ( (JavaScriptExecuter) driver ).executeScript()
+
+
+Errors: due to the lack of resource
+
+24.Exceptions: unexpected event. something went wrong. recoverable
+
+        checked exception: occurs during compile time
+
+                            requires immediate attention
+
+        unchecked exception: occurs during runtime only
+
+
+
+        WebDriver driver = new FireFoxDrive();
+
+        Exceptiosn that I have faced:
+                StaleElementExceptions
+                TimeoutExceptions
+                NoSuchElementException
+                WebDriverException
+                NullPointerException
+                .....
+
+
+25. Exception Hanldings:
+
+        1. try & catch: for both checked and unchecked exceptions. used inside a block
+
+                try{
+                    exception code
+                }catch(ExceptionType){
+                    printStackTrace()
+                }finally{
+
+                }
+
+
+        2. throws: for checked exceptiosn only. within the method signature
+
+
+
+throw: used for creating exceptions manually
+
+
+
+
+26. final vs finally vs finalize:
+
+        final: keyword. can be used for variables, methods, and class.
+
+        finally: Block. can be used with try & catch
+
+        finalize: method. used by garbage collector to remove unreferenced objects from the heap
+
+
+ 27. garbage collection & garbage collector:
+
+            garbage collection: collection of unreferenced object
+
+            garbage collector: process of removing unreferenced objects from the heap
+
+
+            driver =new ChromerDriver();
+
+            driver = null;
+
+
+ 28. Collections: List, Set, Queue
+
+
+
+29. Collection: Size is dynamic
+                Only supports non-primitives
+                Ready methods
+
+
+                List: Accepts Duplicates. Has index numbers
+
+                    ArrayList: array based class, searching/retreating of the element is faster
+
+                    LinkedList: node based class, adding/removing of the element is faster
+
+                    Vector: array absed class. synchronized ===> Thread-safe  ===> slower
+
+                    Stack: array absed class.  synchronized ===> Thread-safe  ===> slower. LIFO
+
+
+
+                Set: Does not accept duplicates. does not have index numbers
+
+                    HashSet: Random order
+
+                    LinkedHashSet: Insertion order
+
+                    TreeSet: Sorted order
+
+
+                Queue: Accepts Duplicates, does not have index. FIFO
+
+
+
+                In My faramework:
+                    List<WebElement>
+
+                    List<Map<String, Object>>
+
+                    Set<String> windows= getWindowHandles();
+
+                    Set<WebElements> dropDownElements
+
+
+29. Iterable & Iterator: used for removing objects while looping the collection
+
+            hasNext()
+            next()
+            remove()
+
+    removeIf()
+
+
+30. Maps: collection of pairs. ( key & value ). key can not be duplicated
+          Size is dynamic
+          Only supports non-primitive data types
+
+
+          HashMap: random order. accepts null key and null values
+
+          LinkedHashMap: Insertion order.  accepts null key and null values
+
+          HashTable: random order. does not accept null. synchronized ===> Thread-safe  ===> slower
+
+          TreeMap: sorted order. key can not be null, values can be null
+
+          In My framework:
+                properties file
+                JSon file
+
+
+url = wwww.gmail.com
+browser = chrome
+
+
+
+"employee1"{
+    "name": "James"
+    "salary": 100000
+    "married": False
+}
+
+
+
+
+
+
+
+
+
+
+
+
