@@ -2,17 +2,11 @@ package day54_2_boot_camp.abstraction_review;
 
 public class Honda extends Car{
     @Override
-    public void driver() {
-
-    }
+    public void driver() {    }
 
     @Override
-    public void start() {
-
-    }
+    public void start() {    }
 
     @Override
-    public void stop() {
-
-    }
+    public void stop() {    }
 }

@@ -13,32 +13,24 @@ public class PolymorphismReview {
         //  Car car = new Honda();
         Car car = new Toyota();
 
-
         //AutoPilot autoPilot = new Tesla();
         AutoPilot autoPilot = new AirPlane();
 
-
-        Car car2 = (Car)new Audi();  // upcasting
+        Car car2 = (Car)new Audi();  // upcasting:casting smaller reference type to larger
 
         Car electricCar = new Tesla();
         electricCar.driver();
         electricCar.start();
         electricCar.stop();
-        //electricCar.autoPilot();
+        //electricCar.autoPilot(); i cannot call, reference type different
 
-        ( (Tesla)electricCar ).auto_pilot();
+        ( (Tesla)electricCar ).auto_pilot();//down casting
 
         Car car3 = new Honda();
 
-        // (  (Tesla)car3 ).auto_pilot();
+        // (  (Tesla)car3 ).auto_pilot();  //down casting , no error, but classCastException we have to write
 
         ((Tesla) electricCar).auto_pilot();
-
-
-
-
-
     }
-
 }
 

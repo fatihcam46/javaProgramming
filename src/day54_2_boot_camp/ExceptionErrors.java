@@ -20,7 +20,7 @@ public class ExceptionErrors {
         while(true){
             cars.add( new Audi() );
         }
-
+technically it is correct,but it is out of memory error, infinitive
          */
 
 
@@ -37,9 +37,7 @@ public class ExceptionErrors {
         throw new RuntimeException("This is exception");
     }
 
-    public static void readFile() throws Exception{
+    public static void readFile() throws Exception{//if you dont know write Exception
         new FileInputStream("");
     }
-
-
 }
