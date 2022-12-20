@@ -9,9 +9,9 @@ public class PrimitiveCastings {
         double f = e;
         /* double > float > long > int > short > byte
         	smaller primitives can be directly assigned to larger primitive type
-        	larger ptimitives can NOT be directly assigned to smaller primitive types (need to be casted manually)
+        	larger primitives can NOT be directly assigned to smaller primitive types (need to be casted manually)
          */
-        int x = 55;   //explicoit casting manually
+        int x = 55;   //explicit casting manually
         short y = (short)x;
         System.out.println(x + " : " + y);
             long j = 1000000;

@@ -18,7 +18,7 @@ public class Person {
         this.language = language;
     }
 
-    //lets look static block >>>it has>>planet, isHuman, hasNose, numberOfWings, numberOfHead
+    //let's look static block >>>it has>>planet, isHuman, hasNose, numberOfWings, numberOfHead
     static{
         planet = "Earth";
         isHuman = true;

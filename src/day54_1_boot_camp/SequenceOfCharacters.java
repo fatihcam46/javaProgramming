@@ -11,32 +11,22 @@ public class SequenceOfCharacters {
         String str4 = new String("cydeo");
 
         String str5 = str1.toUpperCase(); // "CYDEO"
-
         System.out.println(str5);
 
-        str2 = str2.concat("School");
-
-        System.out.println(str2);
-
+        str2 = str2.concat("School");   //str2.concat("School"); System.out.println(str2);//cydeo  be careful use new method
+        System.out.println(str2);//cydeoSchool
 
         // StringBuilder stringBuilder = "cydeo";
         //  StringBuffer stringBuffer = "cydeo";
 
-        StringBuffer stringBuffer = new StringBuffer("Cydeo");
-
+        StringBuffer stringBuffer = new StringBuffer("Cydeo");//Synchronized
         stringBuffer.append(" School");
+        System.out.println(stringBuffer);//Cydeo School
 
-        System.out.println(stringBuffer);
 
-
-        StringBuilder stringBuilder = new StringBuilder("Cydeo");
-
+        StringBuilder stringBuilder = new StringBuilder("Cydeo");//StringBuilder: Not Synchronized-it is not threatened
         stringBuilder.append(" School");
-
-        System.out.println(stringBuilder);
-
-
-
+        System.out.println(stringBuilder);//Cydeo School
 
     }
 

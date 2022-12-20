@@ -15,8 +15,7 @@ class Person{
         this.name = name;
     }
 
-
-    public String toString() {
+    public String toString() {   //toString method>>converting object
         return "Person{" +
                 "name='" + name + '\'' +
                 '}';
@@ -39,20 +38,20 @@ public class CustomClass {
         //    person3.name = "Selenium";
 
 
-        //  System.out.println(person1.name);
-        //   System.out.println(person2.name);
-        //  System.out.println(person3.name);
+        //  System.out.println(person1.name);  //Cydeo
+        //   System.out.println(person2.name); //Java Java
+        //  System.out.println(person3.name);//Selenium Selenium  Selenium
 
 
-        System.out.println(person1);
-        System.out.println(person2);
-        System.out.println(person3);
+        System.out.println(person1);//Person{name='Cydeo'}  System.out.println(person1.name);
+        System.out.println(person2);//Person{name='Java'}
+        System.out.println(person3);//Person{name='Selenium'}
 
-        //  System.out.println(Person.name);
-        System.out.println(person3.name);
+        //  System.out.println(Person.name);error  not through to class
+        System.out.println(person3.name);  //Selenium  it must be called through to object
 
-        System.out.println(Person.number_of_head);
-        //  System.out.println(person1.number_of_head);
+        System.out.println(Person.number_of_head);//1       through the class
+        //  System.out.println(person1.number_of_head);     //through to object possible
 
 
     }
