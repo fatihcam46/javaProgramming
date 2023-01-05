@@ -2,7 +2,7 @@ package day04_Variables;
 public class PrimitivesInto {
     public static void main(String[] args) {
         // age: 38 years old
-        byte age = 38;
+        byte age = 16;
 
         // weight: 160 pounds
         // byte weight: 160 160 is out of range  byte num = -129  -129 is out of range

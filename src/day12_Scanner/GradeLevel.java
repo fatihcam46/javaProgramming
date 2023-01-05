@@ -1,5 +1,7 @@
 package day12_Scanner;
 
+import java.util.Scanner;
+
 public class GradeLevel {
     public static void main(String[] args) {
 
@@ -29,7 +31,10 @@ public class GradeLevel {
         }
         System.out.println("result = " + result);
  */
-        byte number = 6;
+        Scanner scan = new Scanner(System.in);    //   new scanner(System.in).nextInt();
+        System.out.println("Enter a number between 1 to 18 : ");
+        int number = scan.nextInt();
+       // byte number = 6;
 
         String result ="";
         if(number>=1 && number<=18){   //  if the number between 1~18  case:6~18   default:1~5
@@ -53,7 +58,7 @@ public class GradeLevel {
             result  = " Invalid Grade Level";
         }
         System.out.println("result = " + result);
-
+        scan.close();
 
         /*     1. Create a class called GradeLevel, Given a number(byte) grade level determine and print
          which school type someone is in.grade level and types are:

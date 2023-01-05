@@ -19,7 +19,7 @@ public class NestedIfIntro {   // if in altinda baska bir if olmasi
             if (age >= 21) {   // if the person is 21 years old or older
                 System.out.println("Eligible to buy alcohol");
             }else{   // if the person is less then 21 years old
-                System.out.println("Not eigible to buy alcohol");
+                System.out.println("Not eligible to buy alcohol");
             }
         }else{   // if the person does not have ID
             System.out.println("You must have an ID to buy alcohol");

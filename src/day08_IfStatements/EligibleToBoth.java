@@ -12,7 +12,7 @@ public class EligibleToBoth {
         }
         // Not eligible
         if(!isEligible) {
-            System.out.println("Not eligibe");
+            System.out.println("Not eligible");
         }
 
     }

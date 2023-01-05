@@ -15,7 +15,7 @@ public class TipCalculator {
         System.out.println("Enter the check amount:");
         double amount = scan.nextDouble();
 
-        System.out.println("How was the srvice quality? (Excellent/Great/Good/Fair/Poor)");
+        System.out.println("How was the service quality? (Excellent/Great/Good/Fair/Poor)");
         String service = scan.next().toLowerCase();
 
         double tipRate = (service.equals("Excellent"))?0.25 :(service.equals("Great"))?0.2:

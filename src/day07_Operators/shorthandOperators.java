@@ -36,22 +36,22 @@ public class shorthandOperators {
         System.out.println("num1"+num1);  //2.5
             num1 += 5.5;
         System.out.println("num1"+num1);  //8.0
-        System.out.println("---------- double avaliableBalance------------------");
+        System.out.println("---------- double availableBalance------------------");
         double avaliableBalance = 1000.50;
         // deposit 300$
-        avaliableBalance += 300;    // avaliableBalance = 1000.50+300
+        avaliableBalance += 300;    // availableBalance = 1000.50+300
         System.out.println("avaliableBalance = " + avaliableBalance); //1300.5
 
         System.out.println("---------addition Assignment  withdrawing 500$--------------------");
 
         // addition Assignment  withdrawing 500$
-        avaliableBalance -= 500;    //  avaliableBalance = 1300.5-500
+        avaliableBalance -= 500;    //  availableBalance = 1300.5-500
         System.out.println("avaliableBalance = " + avaliableBalance);
 
 // withdrawing 200$ then depositing 400$
         avaliableBalance -=200;  // 600.5
         avaliableBalance +=400;  // 1000.5
-        System.out.println("avaliableBalance = " + avaliableBalance);
+        System.out.println("availableBalance = " + avaliableBalance);
              System.out.println("----double salary = 50000.50---salary = salary *2-----------------------------");
              double salary = 50000.50;
              salary *=2;  // salary = salary *2

@@ -37,14 +37,6 @@ public class StringIntro {
         System.out.println(s3.equals(s4));        //false
 
 
-
-
-
-
-
-
-
-
     }
 }
 

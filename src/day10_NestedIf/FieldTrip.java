@@ -46,7 +46,9 @@ public class FieldTrip {
             System.out.println("location - " + location+"\nnumber of group - " + groupnumber+"\nteacher in charge - " + teacher);
 /*
 
-Create a class called FieldTrip. Your school goes on a Field trip each year. The place you go will be based on your grade. Given a variable gradeNumber (1-6) figure out the details of your field trip. Print the information at the end.
+Create a class called FieldTrip. Your school goes on a Field trip each year. The place you go will be based on
+your grade. Given a variable gradeNumber (1-6) figure out the details of your field trip.
+Print the information at the end.
 
     Data based on grade:
 

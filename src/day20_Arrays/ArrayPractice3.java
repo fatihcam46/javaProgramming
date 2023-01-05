@@ -12,7 +12,7 @@ public class ArrayPractice3 {
             System.exit(0);
         }  // // kullanicinin ne kadar sayi yazacagini bilmedgmzdn int[length]  yazdik
         int[] numbers = new int[length];  //array needs to have enough capacity to contain all
-                                        // the elements user going to enter
+                                        // the elements' user going to enter
 //
         for (int i = 0; i < length; i++) { // i:0, 1...
             System.out.println("Enter a number");

@@ -11,6 +11,9 @@ public class CharacterIdentity {
         }else{
             System.out.println("Special character");
         }
-
+        System.out.println("---------------2nd way------------------------");
+        String result1 = (ch >='0' && ch <='9')? "Digit" : (ch>= 65 && ch<= 90) || (ch >= 97 && ch<= 122 ) ?
+                "Alphabetic": "Special character";
+        System.out.println( result1);
     }
 }

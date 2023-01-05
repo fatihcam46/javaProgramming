@@ -27,7 +27,7 @@ email = email.replace("yahoo", "gmail");
         System.out.println("s2 = " + s2);
 
         String s3 = "C@ is fun, C@ is cool";
-        s3=s3.replace(" C@", " Java"); // ikinci  C@  yerine Java yazalim
+        s3=s3.replace(" C@", " Java"); // ikinci " C@"  yerine Java yazalim
         System.out.println("s3 = " + s3);
         
 System.out.println("-----------------------------------");

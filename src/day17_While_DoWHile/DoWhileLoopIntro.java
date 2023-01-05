@@ -23,7 +23,7 @@ public class DoWhileLoopIntro {
 /*
 You can use a for loop, a while loop or a do-while loop, whichever is convenient.
 • A for-loop maybe used if the number of repetition is known in advance
-• A while loop may be used used if the number of repetition is not fixed
+• A while loop may be  used if the number of repetition is not fixed
 • A do-while loop maybe used to replace while loop if the loop body must be
 executed before the condition is checked.
  */

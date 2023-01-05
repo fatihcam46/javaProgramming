@@ -5,7 +5,7 @@ public class ForEachLoopPractice {
         String[] words = {"Java Programming", "Cydeo School", "Wooden Spoon", "Early Birds","Angrys Birds"};
                 for(String each:words){  // each   can be any name
                     System.out.println(each.charAt(0)+""+each.charAt(each.length()-1));
-                    // each first and last chararcter     Jg  Cl   Wn  Es  As
+                    // each first and last character     Jg  Cl   Wn  Es  As
                 }
 
 

@@ -28,8 +28,9 @@ public class Unary_Operator {
         System.out.println(y--); // post decrement : first passes the current value,decreases the value by 1   //
               System.out.println("-----------exercises-++++++-------------------------");
         int z = 45;
-        System.out.println(++z);  //46
-        System.out.println(z++);   //46  z=47
+        System.out.println(++z);//46
+        System.out.println("z = " + z);//z=46
+        System.out.println(z++);   // 46
         System.out.println(z);      // 47
                 System.out.println("-----------exercises-  --   --------------------");
         int q = 30;
